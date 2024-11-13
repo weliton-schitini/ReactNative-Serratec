@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
+
 import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import Styles from './style'; 
 import App2 from './App2'; 
@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <View style={Styles.container}>
-      <StatusBar style="auto" />
+      
 
       {currentScreen === 'home' ? (
        
@@ -102,9 +102,9 @@ export default function App() {
                 accessibilityLabel="Imagem do Produto"
               />
               <View style={Styles.productsTextContainer}>
-                <Text style={Styles.textProducts}>Sitio Retiro Itaipava hospedagem com estrutura,co...</Text>
-                <Text style={Styles.productsTextPrice}>R$500</Text>
-                <Text>12 Novembro 24:50, Itaipava</Text>
+                <Text style={Styles.textProducts}>Xre 300</Text>
+                <Text style={Styles.productsTextPrice}>R$16.000</Text>
+                <Text>5 Novembro 9:04, Itaipava</Text>
               </View>
             </View>
             <View style={Styles.productsContainer}>
@@ -114,9 +114,9 @@ export default function App() {
                 accessibilityLabel="Imagem do Produto"
               />
               <View style={Styles.productsTextContainer}>
-                <Text style={Styles.textProducts}>Sitio Retiro Itaipava hospedagem com estrutura,co...</Text>
-                <Text style={Styles.productsTextPrice}>R$500</Text>
-                <Text>12 Novembro 24:50, Itaipava</Text>
+                <Text style={Styles.textProducts}>kit 10 cds</Text>
+                <Text style={Styles.productsTextPrice}>R$300</Text>
+                <Text>1 Novembro 22:51, Itaipava</Text>
               </View>
             </View>
            
