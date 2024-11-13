@@ -5,7 +5,7 @@ import Styles from './style';
 import App2 from './App2'; 
 
 export default function App() {
-  const [currentScreen, setCurrentScreen] = useState<'home' | 'app2'>('home'); // Controle de navegação
+  const [currentScreen, setCurrentScreen] = useState<'home' | 'app2'>('home'); 
 
   
   const navigateToApp2 = () => setCurrentScreen('app2');
@@ -21,21 +21,21 @@ export default function App() {
        
         <View style={Styles.container}>
           <View style={Styles.iconContainer}>
-            <TouchableOpacity onPress={navigateToApp2} >
+            <TouchableOpacity >
               <Image
                 source={require('./assets/lupa.png')}
                 style={Styles.iconStyle}
                 accessibilityLabel="Ícone de Pesquisa"
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log("Ícone de Notificação pressionado")} style={Styles.iconButton}>
+            <TouchableOpacity >
               <Image
                 source={require('./assets/notificacao.png')}
                 style={Styles.iconStyle}
                 accessibilityLabel="Ícone de Notificação"
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log("Ícone de Coração pressionado")} style={Styles.iconButton}>
+            <TouchableOpacity >
               <Image
                 source={require('./assets/coracao.png')}
                 style={Styles.iconStyle}
@@ -123,35 +123,35 @@ export default function App() {
           </ScrollView>
 
           <View style={Styles.footerImgContainer}>
-            <TouchableOpacity onPress={() => console.log('Ícone de Caminhão 1 pressionado')}>
+            <TouchableOpacity >
               <Image
                 source={require('./assets/casa.png')}
                 style={Styles.footerImage}
                 accessibilityLabel="Ícone de Caminhão"
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log('Ícone de Caminhão 1 pressionado')}>
+            <TouchableOpacity onPress={navigateToApp2}>
               <Image
                 source={require('./assets/lupa.png')}
                 style={Styles.footerImage}
                 accessibilityLabel="Ícone de Caminhão"
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log('Ícone de Caminhão 1 pressionado')}>
+            <TouchableOpacity >
               <Image
                 source={require('./assets/botao-adicionar.png')}
                 style={Styles.footerImage}
                 accessibilityLabel="Ícone de Caminhão"
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log('Ícone de Caminhão 1 pressionado')}>
+            <TouchableOpacity >
               <Image
                 source={require('./assets/balao-de-fala (1).png')}
                 style={Styles.footerImage}
                 accessibilityLabel="Ícone de Caminhão"
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log('Ícone de Caminhão 1 pressionado')}>
+            <TouchableOpacity >
               <Image
                 source={require('./assets/hamburger.png')}
                 style={Styles.footerImage}
